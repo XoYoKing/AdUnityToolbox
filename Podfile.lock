@@ -1,0 +1,10 @@
+PODS:
+  - Toast (2.3)
+
+DEPENDENCIES:
+  - Toast (~> 2.3)
+
+SPEC CHECKSUMS:
+  Toast: 1d773017c5d2e7b1d90565a5f9530340e6eeff72
+
+COCOAPODS: 0.33.1

@@ -1,0 +1,61 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+
+#define MY_BANNER_UNIT_ID @"ca-app-pub-0243484158988577/5535857795"
+#define kAdUnitIDIns @"ca-app-pub-0243484158988577/3051566198"
+
+#define INMOBI_APP_ID           @"8ae2ea437656407786bc7d36937ac44b" //汇率app
+#define BANNER_APP_ID           INMOBI_APP_ID//@"1400047250296211"
+#define INTERSTITIAL_APP_ID     INMOBI_APP_ID//@"1400161974610189"
+
+#define ADCOLONY_ID @"app3704353871cb4d2da1"
+#define ADCOLONY_ID_ZONE1 @"vzfccbe8dc149248259e"
+#define ADCOLONY_ID_ZONE2 @"vz6451fac9659d43e39d"
+
+//revmob
+#define REVMOB_ID @"53fed6a39e84b9ce0fbd77aa"//5106be9d0639b41100000052"
+
+#define PLACEMENT_ID_BANNER @"53fed6a39e84b9ce0fbd77ac" //5107dfde9c1d2f160000005f"
+#define PLACEMENT_ID_FULLSCREEN @"53fed6ac9e84b9ce0fbd77b3"//5107dfdeb909351500000071"
+#define PLACEMENT_ID_LINK @"53fed6ac9e84b9ce0fbd77b5"//5107dfddb90935a8030000a7"
+#define PLACEMENT_ID_POPUP @"53fed6ac9e84b9ce0fbd77b7"//5107dfdc2513d00d0000007a"
+#define PLACEMENT_ID_NOTIFICATION @""//5107dfdc2513d01400000095"
+
+
+
+
+#define SUB_PRODUCT_ID @"org.bitcall.rubik.ad"
+#define SAVE_AD_STATUS @"bc"
+#define SAVE_STATUS_ADSETTING @"interstital"
+#define SAVE_ADSETTING_BANNER @"banner"
+
+
+#define UMENG_APPKEY @"53fb30cbfd98c5a48b006788"
+
+#define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define UIDeviceOrientationIsPortrait(orientation)  ((orientation) == UIDeviceOrientationPortrait || (orientation) == UIDeviceOrientationPortraitUpsideDown)
+#define UIDeviceOrientationIsLandscape(orientation) ((orientation) == UIDeviceOrientationLandscapeLeft || (orientation) == UIDeviceOrientationLandscapeRight)
+
+#define PUBLIC
+
+#ifdef PUBLIC
+#   define NSLog(...)
+#else
+#   define NSLog(...) NSLog(__VA_ARGS__)
+#endif
+
